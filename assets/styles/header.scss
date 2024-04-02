@@ -1,0 +1,60 @@
+@import'./assets/styles/variables.scss';
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $color-basic-extra-dark;
+  margin: 2.4rem 9.8rem;
+  padding: 0;
+}
+
+header svg {
+  fill: currentColor;
+}
+
+.header__logo {
+width: 13.7rem;
+height: 5.6rem;
+margin-right: 1.6rem;
+}
+
+.menu-item-icon {
+  width: 1.6rem;
+  height: 1.7rem;
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.header__right-wrapper {
+  position: relative;
+}
+
+.header__controls {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 1.125;
+  list-style-type: none;
+}
+
+.header__contact-working-mode {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.header__contact-phone {
+  font-size: 2.2rem;
+}
+
+.header__search-icon,
+.header__login-icon,
+.header__cart-icon {
+  height: 1.6rem;
+  width: 1.6rem;
+}

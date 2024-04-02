@@ -1,0 +1,64 @@
+@import'./assets/styles/variables.scss';
+
+.g-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  line-height: 1.125; 
+  padding: 0.8rem 1.6rem;
+  gap: 0.6rem;
+  border-radius: 3rem;
+  color: $color-basic-extra-dark;
+  background-color: $color-status-success;
+  border: 0.2rem solid transparent;
+}
+
+.g-button:hover {
+  background-color: rgba($color-basic-extra-light, 0.5);
+}
+
+.g-button:focus:not(:active) {
+  background-color: rgba($color-basic-extra-light, 0.5);
+  border-color: $color-basic-extra-dark;
+}
+
+.g-button:active {
+  background-color: $color-basic-extra-light;
+  border-color: $color-basic-extra-light;
+}
+
+.g-button--circle {
+  padding: 0.8rem;
+  border-radius: 2.7rem;
+}
+
+/* Цветовые темы кнопок */
+
+.g-button--theme-default {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.g-button--theme-light {
+  background-color: rgba($color-basic-extra-light, 0.3);
+}
+
+.g-button--theme-pink {
+  color: $color-basic-extra-light;
+  background-color: $color-special-bright;
+
+  &:hover {
+    background-color: rgba($color-special-bright, 0.6);
+  }
+
+  &:focus:not(:active) {
+    background-color: $color-special-bright;
+    border-color: $color-basic-extra-dark;
+  }
+
+  &:active {
+    background-color: rgba($color-special-bright, 0.3);
+    border-color: transparent;
+  }
+}
